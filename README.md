@@ -1,1 +1,9 @@
-# Morden Information System Application Development 
+# Morden Information System Application Development
+
+Route
+
+- Login Page
+  /LoginAdmin.html
+
+- Dashboard Page
+  /
