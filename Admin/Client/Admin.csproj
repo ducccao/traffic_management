@@ -51,6 +51,9 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -60,6 +63,24 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -74,10 +95,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DeleteCustomer.html" />
-    <Content Include="EditCustomer.html" />
-    <Content Include="AddCustomer.html" />
-    <Content Include="AllCustomer.html" />
+    <Content Include="Views\vwProfile\AddProfile.html" />
+    <Content Include="Views\vwProfile\AllProfile.html" />
+    <Content Include="Views\vwProfile\DeleteProfile.html" />
+    <Content Include="Views\vwProfile\EditProfile.html" />
+    <Content Include="Views\vwCustomer\DeleteCustomer.html" />
+    <Content Include="Views\vwCustomer\EditCustomer.html" />
+    <Content Include="Views\vwCustomer\AddCustomer.html" />
+    <Content Include="Views\vwCustomer\AllCustomer.html" />
     <Content Include="CSS\adminlte.min.css" />
     <Content Include="CSS\daterangepicker.css" />
     <Content Include="CSS\fontawesome.min.css" />
@@ -133,6 +158,17 @@
     <Content Include="CSS\summernote-bs4.min.css" />
     <Content Include="CSS\tempusdominus-bootstrap-4.min.css" />
     <Content Include="LoginAdmin.html" />
+    <Content Include="Views\vwFeedback\FeedbackList.html" />
+    <Content Include="Views\vwFeedback\DeleteFeedback.html" />
+    <Content Include="Views\vwFeedback\EditFeedback.html" />
+    <Content Include="Views\vwSchedule\AddSchedule.html" />
+    <Content Include="Views\vwSchedule\AllSchedule.html" />
+    <Content Include="Views\vwSchedule\DeleteSchedule.html" />
+    <Content Include="Views\vwSchedule\EditSchedule.html" />
+    <Content Include="Views\vwVehicle\AddVehicle.html" />
+    <Content Include="Views\vwVehicle\AllVehicle.html" />
+    <Content Include="Views\vwVehicle\DeleteVehicle.html" />
+    <Content Include="Views\vwVehicle\EditVehicle.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +176,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Views\Sidebar.cshtml" />
+    <Content Include="Views\AddCustomer.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
