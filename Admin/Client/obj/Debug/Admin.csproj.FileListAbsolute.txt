@@ -120,3 +120,155 @@ C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\Admin\Client\bin\EntityFram
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\Admin\Client\bin\EntityFramework.SqlServer.dll
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\Admin\Client\bin\EntityFramework.xml
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\Admin\Client\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\Client.dll.config
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\Client.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\Client.pdb
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csc.exe
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csc.exe.config
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csc.rsp
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csi.exe
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csi.exe.config
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csi.rsp
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.AppContext.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Console.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.IO.Compression.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Net.Http.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.ValueTuple.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\vbc.exe
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\vbc.exe.config
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\vbc.rsp
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\VBCSCompiler.exe
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Admin.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Admin.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Admin.csproj.CopyComplete
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Client.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Client.pdb
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Helpers.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Mvc.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Razor.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.Razor.dll
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Helpers.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Mvc.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Razor.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ASUS\Desktop\GitHub\2021\thanhhai\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.Razor.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\Client.dll.config
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\Client.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\Client.pdb
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csc.exe
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csc.exe.config
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csc.rsp
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csi.exe
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csi.exe.config
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\csi.rsp
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.CSharp.Core.targets
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.Managed.Core.targets
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.VisualBasic.Core.targets
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\Microsoft.Win32.Primitives.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.AppContext.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Collections.Immutable.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Console.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Diagnostics.StackTrace.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Globalization.Calendars.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.IO.Compression.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.IO.Compression.ZipFile.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.IO.FileSystem.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.IO.FileSystem.Primitives.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Net.Http.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Net.Sockets.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Reflection.Metadata.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Security.Cryptography.Encoding.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Security.Cryptography.Primitives.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Text.Encoding.CodePages.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Threading.Tasks.Extensions.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.ValueTuple.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Xml.ReaderWriter.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Xml.XmlDocument.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Xml.XPath.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\System.Xml.XPath.XDocument.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\vbc.exe
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\vbc.exe.config
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\vbc.rsp
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\VBCSCompiler.exe
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\roslyn\VBCSCompiler.exe.config
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\EntityFramework.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\EntityFramework.SqlServer.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\Microsoft.Web.Infrastructure.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Helpers.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Mvc.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Razor.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.Deployment.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.Razor.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\EntityFramework.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\EntityFramework.SqlServer.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Helpers.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Mvc.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.Razor.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.Deployment.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\System.Web.WebPages.Razor.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Admin.csprojAssemblyReference.cache
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Admin.csproj.CoreCompileInputs.cache
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Admin.csproj.CopyComplete
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Client.dll
+L:\Năm 4\HK1\PTUDHĐ\phatTrienUngDungHTTTHD\Admin\Client\obj\Debug\Client.pdb

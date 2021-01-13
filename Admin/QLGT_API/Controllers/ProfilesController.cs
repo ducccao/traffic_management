@@ -8,12 +8,14 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using QLGT_API.Data;
 using QLGT_API.Models;
 
 namespace QLGT_API.Controllers
 {
+    [EnableCors(origins: "https://localhost:44307", headers: "*", methods: "*")]
     public class ProfilesController : ApiController
     {
         private QLGT_APIContext db = new QLGT_APIContext();

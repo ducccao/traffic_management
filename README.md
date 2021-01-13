@@ -1,9 +1,2 @@
-# Morden Information System Application Development
-
-Route
-
-- Login Page
-  /LoginAdmin.html
-
-- Dashboard Page
-  /
+# phatTrienUngDungHTTTHD
+Git làm đồ án cuối kì của nhóm 7ACE

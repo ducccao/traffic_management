@@ -6,7 +6,7 @@ using System.Web;
 
 namespace QLGT_API.Data
 {
-    public class QLGT_APIContext : DbContext
+    public class QLGT_APIContext : DbContext    
     {
         // You can add custom code to this file. Changes will not be overwritten.
         // 
@@ -22,5 +22,13 @@ namespace QLGT_API.Data
         public System.Data.Entity.DbSet<QLGT_API.Models.Customer> Customers { get; set; }
 
         public System.Data.Entity.DbSet<QLGT_API.Models.Profile> Profiles { get; set; }
+
+        public System.Data.Entity.DbSet<QLGT_API.Models.Vehicle> Vehicles { get; set; }
+
+        public System.Data.Entity.DbSet<QLGT_API.Models.Schedule> Schedules { get; set; }
+
+        public System.Data.Entity.DbSet<QLGT_API.Models.Feedback> Feedbacks { get; set; }
+
+        public System.Data.Entity.DbSet<QLGT_API.Models.Test> Tests { get; set; }
     }
 }
