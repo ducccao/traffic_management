@@ -8448,11 +8448,11 @@ namespace Mobile.Droid
 			// aapt resource value: 0x7F08001E
 			public const int always = 2131230750;
 			
-			// aapt resource value: 0x7F080001
-			public const int APPLICATION_NAME = 2131230721;
-			
 			// aapt resource value: 0x7F08001F
 			public const int application_name = 2131230751;
+			
+			// aapt resource value: 0x7F080001
+			public const int APPLICATION_NAME = 2131230721;
 			
 			// aapt resource value: 0x7F080020
 			public const int async = 2131230752;
@@ -9007,28 +9007,31 @@ namespace Mobile.Droid
 			public const int transition_transform = 2131230930;
 			
 			// aapt resource value: 0x7F0800D3
-			public const int uniform = 2131230931;
+			public const int txtCreateAccount = 2131230931;
 			
 			// aapt resource value: 0x7F0800D4
-			public const int unlabeled = 2131230932;
+			public const int uniform = 2131230932;
 			
 			// aapt resource value: 0x7F0800D5
-			public const int up = 2131230933;
+			public const int unlabeled = 2131230933;
 			
 			// aapt resource value: 0x7F0800D6
-			public const int useLogo = 2131230934;
+			public const int up = 2131230934;
 			
 			// aapt resource value: 0x7F0800D7
-			public const int view_offset_helper = 2131230935;
+			public const int useLogo = 2131230935;
 			
 			// aapt resource value: 0x7F0800D8
-			public const int visible = 2131230936;
+			public const int view_offset_helper = 2131230936;
 			
 			// aapt resource value: 0x7F0800D9
-			public const int withText = 2131230937;
+			public const int visible = 2131230937;
 			
 			// aapt resource value: 0x7F0800DA
-			public const int wrap_content = 2131230938;
+			public const int withText = 2131230938;
+			
+			// aapt resource value: 0x7F0800DB
+			public const int wrap_content = 2131230939;
 			
 			static Id()
 			{

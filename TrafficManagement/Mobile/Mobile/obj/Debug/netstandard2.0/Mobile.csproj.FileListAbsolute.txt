@@ -1,0 +1,14 @@
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\bin\Debug\netstandard2.0\Mobile.deps.json
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\bin\Debug\netstandard2.0\Mobile.dll
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\bin\Debug\netstandard2.0\ref\Mobile.dll
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\bin\Debug\netstandard2.0\Mobile.pdb
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csprojAssemblyReference.cache
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.dll
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\ref\Mobile.dll
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_controller\TrafficManagement\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.pdb
