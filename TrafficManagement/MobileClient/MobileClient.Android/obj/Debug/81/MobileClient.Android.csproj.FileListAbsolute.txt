@@ -1,0 +1,2 @@
+L:\Năm 4\HK1\PTUDHĐ\traffic_management\TrafficManagement\MobileClient\MobileClient.Android\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
+L:\Năm 4\HK1\PTUDHĐ\traffic_management\TrafficManagement\MobileClient\MobileClient.Android\obj\Debug\81\MobileClient.Android.csprojAssemblyReference.cache
