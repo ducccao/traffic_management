@@ -13,7 +13,7 @@ namespace QLGT_API.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202101121444262_Initial"; }
+            get { return "202101150240052_Initial"; }
         }
         
         string IMigrationMetadata.Source

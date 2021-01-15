@@ -22,6 +22,7 @@ namespace QLGT_API.Controllers
     {
         private QLGT_APIContext db = new QLGT_APIContext();
 
+        [Authorize]
         // GET: api/Customers
         public IQueryable<Customer> GetCustomers()
         {
