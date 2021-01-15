@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="100px"
+
     android:background="@android:color/background_light"
 >
     <TextView
@@ -17,7 +17,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
         android:layout_height="150px"
-        android:layout_weight="20px"
+        android:layout_weight="1"
         android:minWidth="25px"
         android:minHeight="25px"
         android:id="@+id/txtCreateAccount"
@@ -32,11 +32,11 @@
 
         android:layout_marginLeft="50px"
         android:layout_marginRight="50px"
-        android:id=""/>
+       />
 
     <TextView
         android:layout_width="match_parent"
-        android:textFontWeight="bold"
+
         android:textColor="#368DEB"
         android:layout_height="170px"
         android:text="Or"
@@ -61,6 +61,6 @@
             android:layout_width="match_parent"
             android:layout_height="100px"
             android:layout_centerInParent="true"
-            android:id=""/>
+           />
     </RelativeLayout>
 </LinearLayout>

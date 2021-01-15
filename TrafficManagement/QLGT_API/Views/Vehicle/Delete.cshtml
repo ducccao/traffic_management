@@ -1,0 +1,205 @@
+﻿
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title text-white">Delete  Form</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form class="form-horizontal" id="fmDeleteVehicle">
+                <div class="card-body">
+
+
+
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Vehicle ID</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Id" placeholder="Id">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-danger w-50">Delete</button>
+                    <button type="submit" class="btn btn-default float-right w-50">Cancel</button>
+                </div>
+                <!-- /.card-footer -->
+            </form>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+
+@section Scripts{
+    <script>
+        function delProfile() {
+            const fmDeleteProfile = $("#fmDeleteVehicle");
+            var Id = $("#Id");
+
+
+
+            fmDeleteProfile.on("submit", e => {
+                e.preventDefault();
+                const url = `https://localhost:44328/api/vehicles/${Id.val()}`;
+
+                const data = {
+                    Id: Id.val()
+                }
+
+                console.log("data ", data)
+
+                if (data.Id === "") {
+                    let timerInterval
+                    Swal.fire({
+                        title: 'Vehicle ID Is Empty!',
+                        //  html: 'I will close in <b></b> milliseconds.',
+                        timer: 2000,
+                        icon: "warning",
+                        //  timerProgressBar: true,
+                        didOpen: () => {
+                            Swal.showLoading()
+                            timerInterval = setInterval(() => {
+                                const content = Swal.getContent()
+                                if (content) {
+                                    const b = content.querySelector('b')
+                                    if (b) {
+                                        b.textContent = Swal.getTimerLeft()
+                                    }
+                                }
+                            }, 100)
+                        },
+                        willClose: () => {
+                            clearInterval(timerInterval)
+                        }
+                    }).then((result) => {
+                        /* Read more about handling dismissals below */
+                        if (result.dismiss === Swal.DismissReason.timer) {
+                            console.log('I was closed by the timer')
+                        }
+                    })
+
+
+                    return;
+                }
+
+
+                if (isNaN(data.Id)) {
+                    let timerInterval
+                    Swal.fire({
+                        title: 'ProfileId Must Be A Number!',
+                        //  html: 'I will close in <b></b> milliseconds.',
+                        timer: 2000,
+                        icon: "error",
+                        //  timerProgressBar: true,
+                        didOpen: () => {
+                            Swal.showLoading()
+                            timerInterval = setInterval(() => {
+                                const content = Swal.getContent()
+                                if (content) {
+                                    const b = content.querySelector('b')
+                                    if (b) {
+                                        b.textContent = Swal.getTimerLeft()
+                                    }
+                                }
+                            }, 100)
+                        },
+                        willClose: () => {
+                            clearInterval(timerInterval)
+                        }
+                    }).then((result) => {
+                        /* Read more about handling dismissals below */
+                        if (result.dismiss === Swal.DismissReason.timer) {
+                            console.log('I was closed by the timer')
+                        }
+                    })
+                    return;
+                }
+
+
+                $.ajax({
+                    type: "delete",
+                    url: url,
+                    data: data,
+                    success: data => {
+
+                        console.log(data)
+
+                        let timerInterval
+                        Swal.fire({
+                            title: 'Delete Vehicle Success!',
+                            //  html: 'I will close in <b></b> milliseconds.',
+                            timer: 2000,
+                            icon: "success",
+                            //  timerProgressBar: true,
+                            didOpen: () => {
+                                Swal.showLoading()
+                                timerInterval = setInterval(() => {
+                                    const content = Swal.getContent()
+                                    if (content) {
+                                        const b = content.querySelector('b')
+                                        if (b) {
+                                            b.textContent = Swal.getTimerLeft()
+                                        }
+                                    }
+                                }, 100)
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval)
+                            }
+                        }).then((result) => {
+                            /* Read more about handling dismissals below */
+                            if (result.dismiss === Swal.DismissReason.timer) {
+                                console.log('I was closed by the timer')
+                            }
+                        })
+                    },
+                    // error ajax
+                    error: er => {
+                        console.log(er);
+                        let timerInterval
+                        Swal.fire({
+                            title: 'Vehicle Not Found!',
+                            //  html: 'I will close in <b></b> milliseconds.',
+                            timer: 2000,
+                            icon: "error",
+                            //  timerProgressBar: true,
+                            didOpen: () => {
+                                Swal.showLoading()
+                                timerInterval = setInterval(() => {
+                                    const content = Swal.getContent()
+                                    if (content) {
+                                        const b = content.querySelector('b')
+                                        if (b) {
+                                            b.textContent = Swal.getTimerLeft()
+                                        }
+                                    }
+                                }, 100)
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval)
+                            }
+                        }).then((result) => {
+                            /* Read more about handling dismissals below */
+                            if (result.dismiss === Swal.DismissReason.timer) {
+                                console.log('I was closed by the timer')
+                            }
+                        })
+                    }
+                })
+
+            })
+        }
+        delProfile();
+    </script>
+}
