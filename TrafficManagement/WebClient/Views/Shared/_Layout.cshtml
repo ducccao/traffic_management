@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @*@Styles.Render("~/Content/css")*@
+
+    <style>
+
+        ::-webkit-scrollbar{
+            display:none;
+        }
+
+    </style>
+
     <link href="~/CSS/css.css" rel="stylesheet" />
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
           crossorigin="anonymous" />
@@ -40,9 +49,9 @@
                                 Nộp phạt
                             </a>
                             @*<a class="nav-link" href="deleteaccount.html">
-            <div class="sb-nav-link-icon"><i class="fas fa-user-slash"></i></div>
-            Xoá tài khoản
-        </a>*@
+                                <div class="sb-nav-link-icon"><i class="fas fa-user-slash"></i></div>
+                                Xoá tài khoản
+                            </a>*@
                             <div class="sb-sidenav-menu-heading">Lịch hẹn của bạn </div>
                             <a class="nav-link" href="/Schedule">
                                 <div class="sb-nav-link-icon"><i class="fas fa-calendar-alt"></i></div>
@@ -70,24 +79,24 @@
                             <div class="sb-sidenav-menu-heading">Đánh giá</div>
                             <a class="nav-link" href="/Feedback/All">
                                 <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
-                             Xem đánh giá của mọi người
+                                Xem đánh giá của mọi người
                             </a>
                             <a class="nav-link" href="/Feedback/Add">
                                 <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
-                             Gửi đánh giá
+                                Gửi đánh giá
                             </a>
                             @*<a class="nav-link" href="unaprovedfiles.html">
-            <div class="sb-nav-link-icon"><i class="fas fa-file-edit"></i></div>
-            Hồ sơ chưa duyệt
-        </a>
-        <a class="nav-link" href="aprovedfiles.html">
-            <div class="sb-nav-link-icon"><i class="fas fa-file-check"></i></div>
-            Hồ sơ đã duyệt
-        </a>
-        <a class="nav-link" href="rejectedfiles.html">
-            <div class="sb-nav-link-icon"><i class="fas fa-file-times"></i></div>
-            Hồ sơ bị loại
-        </a>*@
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-edit"></i></div>
+                                Hồ sơ chưa duyệt
+                            </a>
+                            <a class="nav-link" href="aprovedfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-check"></i></div>
+                                Hồ sơ đã duyệt
+                            </a>
+                            <a class="nav-link" href="rejectedfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-times"></i></div>
+                                Hồ sơ bị loại
+                            </a>*@
                         </div>
                     </div>
                 </nav>
@@ -112,6 +121,9 @@
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
         <script src="assets/demo/datatables-demo.js"></script>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/bootstrap")
