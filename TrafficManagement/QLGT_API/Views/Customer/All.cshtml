@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewBag.Title = "Customer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Information</h3>
+
+                        <div class="card-tools">
+                            <div class="input-group input-group-sm" style="width: 150px;">
+                                <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
+
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-default">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body table-responsive p-0">
+                        <table class="table table-hover text-nowrap">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Username</th>
+                                    <th>Password</th>
+                                    <th>Address</th>
+                                </tr>
+                            </thead>
+                            <tbody id="infor-customer">
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+
+@section Scripts
+{
+
+    <script>
+        var uri = `https://localhost:44328/api/customers`;
+
+
+        $(document).ready(function () {
+            // Send an AJAX request
+            const tbody = $('#infor-customer');
+            $.getJSON(uri)
+                .done(function (data) {
+                    // On success, 'data' contains a list of products.
+                    console.log(data);
+
+                    $.each(data, function (key, item) {
+                        // Add a list item for the product.
+                        console.log(item);
+                        const dataAppend = `<tr>
+<td> ${item.Id} </td>
+<td> ${item.Name} </td>
+<td> ${item.Phone} </td>
+<td> ${item.UserName} </td>
+<td> ${item.Password} </td>
+<td> ${item.Address} </td>
+</tr>
+`
+                        tbody.append(dataAppend);
+                    });
+                });
+        });
+
+        function formatItem(item) {
+            return item.Name + ': $' + item.Price;
+        }
+
+        function find() {
+            var id = $('#prodId').val();
+            $.getJSON(uri + '/' + id)
+                .done(function (data) {
+                    $('#product').text(formatItem(data));
+                })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#product').text('Error: ' + err);
+                });
+        }
+    </script>
+
+ }
