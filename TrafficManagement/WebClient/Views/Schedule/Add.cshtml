@@ -1,0 +1,198 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="card card-info">
+            <div class="card-header">
+                <h3 class="card-title">Thêm lịch hẹn</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form class="form-horizontal" id="fmAddSchedule">
+                <div class="card-body">
+                    <!--<div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Id</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Id" placeholder="Id">
+                        </div>
+                    </div>-->
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Lý do</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Reason" placeholder="Reason">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-info w-50">Thêm</button>
+                    <button type="submit" class="btn btn-default float-right w-50">Hủy bỏ</button>
+                </div>
+                <!-- /.card-footer -->
+            </form>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+
+@section Scripts{
+    <script>
+        function addSchedule() {
+            const fmAddSchedule = $("#fmAddSchedule");
+            const Reason = $("#Reason");
+            const today = new Date();
+            const date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+            const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            const CreatedAt = date + ' ' + time;
+            //const CustomerId=1
+            const url = `https://localhost:44328/api/schedules`;
+
+
+
+            fmAddSchedule.on("submit", e => {
+                e.preventDefault();
+
+
+                let data = {
+                    Reason: Reason.val(),
+                    DateSchedule: CreatedAt
+                    //CustomerId: CustomerId
+                }
+
+
+                if (data.Reason === "") {
+
+                    let timerInterval
+                    Swal.fire({
+                        title: 'Invalid Value!',
+                        //  html: 'I will close in <b></b> milliseconds.',
+                        timer: 2000,
+                        icon: "error",
+                        //  timerProgressBar: true,
+                        didOpen: () => {
+                            Swal.showLoading()
+                            timerInterval = setInterval(() => {
+                                const content = Swal.getContent()
+                                if (content) {
+                                    const b = content.querySelector('b')
+                                    if (b) {
+                                        b.textContent = Swal.getTimerLeft()
+                                    }
+                                }
+                            }, 100)
+                        },
+                        willClose: () => {
+                            clearInterval(timerInterval)
+                        }
+                    }).then((result) => {
+                        /* Read more about handling dismissals below */
+                        if (result.dismiss === Swal.DismissReason.timer) {
+                            console.log('I was closed by the timer')
+                        }
+                    })
+
+                    return;
+                }
+
+
+
+
+                $.ajax({
+                    type: "post",
+                    url: url,
+                    data: data,
+                    success: data => {
+                        console.log(data);
+                        let timerInterval
+                        Swal.fire({
+                            title: 'Thêm lịch hẹn thành công!',
+                            //  html: 'I will close in <b></b> milliseconds.',
+                            timer: 2000,
+                            icon: "success",
+                            //  timerProgressBar: true,
+                            didOpen: () => {
+                                Swal.showLoading()
+                                timerInterval = setInterval(() => {
+                                    const content = Swal.getContent()
+                                    if (content) {
+                                        const b = content.querySelector('b')
+                                        if (b) {
+                                            b.textContent = Swal.getTimerLeft()
+                                        }
+                                    }
+                                }, 100)
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval)
+                            }
+                        }).then((result) => {
+                            /* Read more about handling dismissals below */
+                            if (result.dismiss === Swal.DismissReason.timer) {
+                                console.log('I was closed by the timer')
+                            }
+                        })
+                    },
+                    // ajax error
+                    error: er => {
+                        console.log(er);
+
+                        let timerInterval
+                        Swal.fire({
+                            title: 'Thêm lịch hẹn thất bại',
+                            //  html: 'I will close in <b></b> milliseconds.',
+                            timer: 2000,
+                            icon: "error",
+                            //  timerProgressBar: true,
+                            didOpen: () => {
+                                Swal.showLoading()
+                                timerInterval = setInterval(() => {
+                                    const content = Swal.getContent()
+                                    if (content) {
+                                        const b = content.querySelector('b')
+                                        if (b) {
+                                            b.textContent = Swal.getTimerLeft()
+                                        }
+                                    }
+                                }, 100)
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval)
+                            }
+                        }).then((result) => {
+                            /* Read more about handling dismissals below */
+                            if (result.dismiss === Swal.DismissReason.timer) {
+                                console.log('I was closed by the timer')
+                            }
+                        })
+                    }
+                })
+
+
+
+
+
+                console.log(data);
+
+
+
+            })
+
+
+
+
+        }
+        addSchedule();
+    </script>
+}

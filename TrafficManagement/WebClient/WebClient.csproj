@@ -183,6 +183,8 @@
     <Content Include="Views\Feedback\All.cshtml" />
     <Content Include="Views\Feedback\Add.cshtml" />
     <Content Include="Views\Payment\Index.cshtml" />
+    <Content Include="Views\Schedule\Delete.cshtml" />
+    <Content Include="Views\Schedule\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

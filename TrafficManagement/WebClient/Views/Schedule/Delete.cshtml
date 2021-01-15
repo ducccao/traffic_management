@@ -1,0 +1,206 @@
+﻿
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title text-white">Xóa lịch hẹn</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form class="form-horizontal" id="fmDeleteSchedule">
+                <div class="card-body">
+
+
+
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Mã lịch hẹn</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="Id" placeholder="Id">
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-danger w-50">Xóa</button>
+                    <button type="submit" class="btn btn-default float-right w-50">Hủy bỏ</button>
+                </div>
+                <!-- /.card-footer -->
+            </form>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+</section>
+
+
+@section Scripts{
+    <script>
+        function delSchedule() {
+            const fmDeleteSchedule = $("#fmDeleteSchedule");
+            var Id = $("#Id");
+
+
+
+            fmDeleteSchedule.on("submit", e => {
+                e.preventDefault();
+                const url = `https://localhost:44328/api/schedules/${Id.val()}`;
+
+                const data = {
+                    Id: Id.val()
+                }
+
+                console.log("data ", data)
+
+                if (data.Id === "") {
+                    let timerInterval
+                    Swal.fire({
+                        title: 'Mã lịch hẹn trống!',
+                        //  html: 'I will close in <b></b> milliseconds.',
+                        timer: 2000,
+                        icon: "warning",
+                        //  timerProgressBar: true,
+                        didOpen: () => {
+                            Swal.showLoading()
+                            timerInterval = setInterval(() => {
+                                const content = Swal.getContent()
+                                if (content) {
+                                    const b = content.querySelector('b')
+                                    if (b) {
+                                        b.textContent = Swal.getTimerLeft()
+                                    }
+                                }
+                            }, 100)
+                        },
+                        willClose: () => {
+                            clearInterval(timerInterval)
+                        }
+                    }).then((result) => {
+                        /* Read more about handling dismissals below */
+                        if (result.dismiss === Swal.DismissReason.timer) {
+                            console.log('I was closed by the timer')
+                        }
+                    })
+
+
+                    return;
+                }
+
+
+                if (isNaN(data.Id)) {
+                    let timerInterval
+                    Swal.fire({
+                        title: 'Mã lịch hẹn phải là 1 số!',
+                        //  html: 'I will close in <b></b> milliseconds.',
+                        timer: 2000,
+                        icon: "error",
+                        //  timerProgressBar: true,
+                        didOpen: () => {
+                            Swal.showLoading()
+                            timerInterval = setInterval(() => {
+                                const content = Swal.getContent()
+                                if (content) {
+                                    const b = content.querySelector('b')
+                                    if (b) {
+                                        b.textContent = Swal.getTimerLeft()
+                                    }
+                                }
+                            }, 100)
+                        },
+                        willClose: () => {
+                            clearInterval(timerInterval)
+                        }
+                    }).then((result) => {
+                        /* Read more about handling dismissals below */
+                        if (result.dismiss === Swal.DismissReason.timer) {
+                            console.log('I was closed by the timer')
+                        }
+                    })
+                    return;
+                }
+
+
+                $.ajax({
+                    type: "delete",
+                    url: url,
+                    data: data,
+                    success: data => {
+
+                        console.log(data)
+
+                        let timerInterval
+                        Swal.fire({
+                            title: 'Xóa lịch hẹn thành công!',
+                            //  html: 'I will close in <b></b> milliseconds.',
+                            timer: 2000,
+                            icon: "success",
+                            //  timerProgressBar: true,
+                            didOpen: () => {
+                                Swal.showLoading()
+                                timerInterval = setInterval(() => {
+                                    const content = Swal.getContent()
+                                    if (content) {
+                                        const b = content.querySelector('b')
+                                        if (b) {
+                                            b.textContent = Swal.getTimerLeft()
+                                        }
+                                    }
+                                }, 100)
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval)
+                            }
+                        }).then((result) => {
+                            /* Read more about handling dismissals below */
+                            if (result.dismiss === Swal.DismissReason.timer) {
+                                console.log('I was closed by the timer')
+                            }
+                        })
+                    },
+                    // error ajax
+                    error: er => {
+                        console.log(er);
+                        let timerInterval
+                        Swal.fire({
+                            title: 'Không tìm thấy mã lịch hẹn!',
+                            //  html: 'I will close in <b></b> milliseconds.',
+                            timer: 2000,
+                            icon: "error",
+                            //  timerProgressBar: true,
+                            didOpen: () => {
+                                Swal.showLoading()
+                                timerInterval = setInterval(() => {
+                                    const content = Swal.getContent()
+                                    if (content) {
+                                        const b = content.querySelector('b')
+                                        if (b) {
+                                            b.textContent = Swal.getTimerLeft()
+                                        }
+                                    }
+                                }, 100)
+                            },
+                            willClose: () => {
+                                clearInterval(timerInterval)
+                            }
+                        }).then((result) => {
+                            /* Read more about handling dismissals below */
+                            if (result.dismiss === Swal.DismissReason.timer) {
+                                console.log('I was closed by the timer')
+                            }
+                        })
+                    }
+                })
+
+            })
+        }
+        delSchedule();
+    </script>
+}

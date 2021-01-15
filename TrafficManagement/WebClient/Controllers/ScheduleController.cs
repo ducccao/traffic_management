@@ -13,5 +13,13 @@ namespace WebClient.Controllers
         {
             return View();
         }
+        public ActionResult Add()
+        {
+            return View();
+        }
+        public ActionResult Delete()
+        {
+            return View();
+        }
     }
 }
