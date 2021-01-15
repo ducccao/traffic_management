@@ -1,0 +1,166 @@
+﻿
+@{
+    ViewBag.Title = "Nộp phạt";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+
+    <style>
+
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html, body, div, span, applet, object, iframe, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+
+        .btn {
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                transform: translateY(-2px);
+            }
+
+        .input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+            height: 4rem;
+        }
+
+        .gray {
+            background-color: #E1E1E1;
+        }
+
+        .blue {
+            background-color: #0088D1;
+            color: white;
+        }
+
+        .input input {
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            padding: 0 10px;
+        }
+
+        .input input, .input button {
+            height: 60%;
+            width: 20%;
+        }
+
+        .main {
+            background-color: #F5F5F5;
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .detail {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .detail img {
+                width: 25%;
+                height: auto;
+            }
+
+        .plus-sign {
+            text-indent: 1rem;
+        }
+
+        .submit-fee {
+            margin-top: 100px;
+            width: 30%;
+            height: 3rem;
+            font-size: 18px;
+        }
+    </style>
+    }
+
+
+    <section>
+        <div class="input">
+            <input class="gray" type="text" placeholder="Nhập số Giấy Phép Lái Xe">
+            <button class="btn blue">Nhật Ký Nộp Phạt</button>
+        </div>
+
+        <div class="main">
+            <div class="detail">
+                <div class="info">
+                    <p>Thời Gian: 9:45 PM</p>
+                    <p>Ngày: 16/11/2020</p>
+                    <p>Nội Dung Vi Phạm:</p>
+                    <p class="plus-sign">+ Vượt đèn đỏ</p>
+                    <p>Tan Vật Hiện Giữ:</p>
+                    <p class="plus-sign">+ Bằng lái xe</p>
+                    <p>Nơi Vi Phạm:</p>
+                    <p class="plus-sign">Ngã Tư Hàng Xanh</p>
+                </div>
+
+                <img src="./cmnd.png" alt="cmnd" />
+            </div>
+            <button class="btn blue submit-fee">Tiến Hành Nộp Phạt</button>
+        </div>
+    </section>
+
