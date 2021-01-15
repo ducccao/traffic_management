@@ -156,3 +156,7 @@ C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\WebClient
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\WebClient\obj\Debug\WebClient.csproj.CopyComplete
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\WebClient\obj\Debug\WebClient.dll
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\WebClient\obj\Debug\WebClient.pdb
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\WebClient\bin\EntityFramework.dll
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\WebClient\bin\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\WebClient\bin\EntityFramework.xml
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\WebClient\bin\EntityFramework.SqlServer.xml
