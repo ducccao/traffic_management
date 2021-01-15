@@ -17,7 +17,7 @@ namespace QLGT_API.Controllers
 {
 
 
-    [EnableCors(origins: "https://localhost:44307", headers: "*", methods: "*")]
+   
     public class SchedulesController : ApiController
     {
         private QLGT_APIContext db = new QLGT_APIContext();

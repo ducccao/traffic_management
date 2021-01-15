@@ -1,7 +1,65 @@
-﻿@{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿
+@{
     ViewBag.Title = "Schedule";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div>
-Schedule
+
+
+<h2 class="mt-4">
+    Thông tin lịch hẹn
+</h2>
+
+<div class="card mb-4">
+    <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+
+    </div>
+    <div class="card-body">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Lý do</th>
+                    <th>Ngày hẹn</th>
+                </tr>
+            </thead>
+            <tbody id="infor-schedule">
+
+
+                <!-- render DB right there -->
+
+            </tbody>
+        </table>
+
+    </div>
 </div>
+
+@section scripts{
+    <script>
+        var uri = `https://localhost:44328/api/schedules`;
+
+
+        $(document).ready(function () {
+            // Send an AJAX request
+            const tbody = $('#infor-schedule');
+            $.getJSON(uri)
+                .done(function (data) {
+                    // On success, 'data' contains a list of products.
+                    console.log(data);
+
+                    $.each(data, function (key, item) {
+                        // Add a list item for the product.
+                        console.log(item);
+                        const dataAppend = `<tr>
+<td> ${item.Id} </td>
+<td> ${item.Reason} </td>
+<td> ${item.DateSchedule} </td>
+</tr>
+`
+                        tbody.append(dataAppend);
+                    });
+                });
+        });
+    </script>
+}

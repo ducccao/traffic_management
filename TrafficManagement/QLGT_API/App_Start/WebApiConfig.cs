@@ -14,8 +14,8 @@ namespace QLGT_API
 
 
             // CORS BUG
-          var cors = new EnableCorsAttribute("*", "*", "*");
-           config.EnableCors(cors);
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
 
 
             // Web API routes

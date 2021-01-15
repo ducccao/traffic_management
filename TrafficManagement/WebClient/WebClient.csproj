@@ -181,6 +181,8 @@
     <Content Include="Views\Vehicle\Index.cshtml" />
     <Content Include="Views\Feedback\All.cshtml" />
     <Content Include="Views\Feedback\Add.cshtml" />
+    <Content Include="Views\Schedule\Add.cshtml" />
+    <Content Include="Views\Schedule\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
