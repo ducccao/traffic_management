@@ -5,7 +5,7 @@
 }
 
 
-<h2 class="mt-4" >
+<h2 class="mt-4">
     Thông tin xe
 </h2>
 
@@ -16,32 +16,84 @@
     </div>
     <div class="card-body">
 
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>john@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>Mary</td>
-                        <td>Moe</td>
-                        <td>mary@example.com</td>
-                    </tr>
-                    <tr>
-                        <td>July</td>
-                        <td>Dooley</td>
-                        <td>july@example.com</td>
-                    </tr>
-                </tbody>
-            </table>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Tên xe</th>
+                    <th>Sức chứa</th>
+                    <th>Loại xe</th>
+                    <th>Biển số xe</th>
+                    <th>Giá</th>
+                    <th>Ngày đăng ký</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody id="infor-vehicle" >
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+
+                <!-- render DB right there -->
+
+            </tbody>
+        </table>
 
     </div>
 </div>
+
+@section scripts{
+    <script>
+        var uri = `https://localhost:44328/api/vehicles`;
+
+
+        $(document).ready(function () {
+            // Send an AJAX request
+            const tbody = $('#infor-vehicle');
+            $.getJSON(uri)
+                .done(function (data) {
+                    // On success, 'data' contains a list of products.
+                    console.log(data);
+
+                    $.each(data, function (key, item) {
+                        // Add a list item for the product.
+                        console.log(item);
+                        const dataAppend = `<tr>
+<td> ${item.Id} </td>
+<td> ${item.Name} </td>
+<td> ${item.Capacity} </td>
+<td> ${item.Type} </td>
+<td> ${item.LicensePlates} </td>
+<td> ${item.Price} </td>
+    <td> ${item.SignedUpDate} </td>
+    <td> ${item.Status} </td>
+</tr>
+`
+                        tbody.append(dataAppend);
+                    });
+                });
+        });
+
+        function formatItem(item) {
+            return item.Name + ': $' + item.Price;
+        }
+
+        function find() {
+            var id = $('#prodId').val();
+            $.getJSON(uri + '/' + id)
+                .done(function (data) {
+                    $('#product').text(formatItem(data));
+                })
+                .fail(function (jqXHR, textStatus, err) {
+                    $('#product').text('Error: ' + err);
+                });
+        }
+    </script>
+    }

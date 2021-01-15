@@ -16,7 +16,9 @@ using QLGT_API.Models;
 namespace QLGT_API.Controllers
 {
 
-    [EnableCors(origins: "https://localhost:44307", headers: "*", methods: "*")]
+   // [EnableCors(origins:"https://localhost:44307", headers: "*", methods: "*")]
+  //  [EnableCors(origins:  "*", headers: "*", methods: "*")]
+
     public class VehiclesController : ApiController
     {
         private QLGT_APIContext db = new QLGT_APIContext();

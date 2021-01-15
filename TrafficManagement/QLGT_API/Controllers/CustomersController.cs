@@ -15,8 +15,8 @@ using System.Web.Http.Cors;
 
 namespace QLGT_API.Controllers
 {
-    [EnableCors(origins: "https://localhost:44307", headers:"*", methods: "*")]
-
+    //[EnableCors(origins: "https://localhost:44307", headers:"*", methods: "*")]
+   // [EnableCors(origins: "*", headers:"*", methods: "*")]
 
     public class CustomersController : ApiController
     {
