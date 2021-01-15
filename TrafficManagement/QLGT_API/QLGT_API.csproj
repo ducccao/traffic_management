@@ -173,10 +173,12 @@
     <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\FeedbacksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Controllers\SchedulesController.cs" />
     <Compile Include="Controllers\TestsController.cs" />
+    <Compile Include="Controllers\TypeVehiclesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VehicleController.cs" />
     <Compile Include="Controllers\VehiclesController.cs" />
@@ -187,6 +189,10 @@
     <Compile Include="Migrations\202101150413371_Initial.cs" />
     <Compile Include="Migrations\202101150413371_Initial.designer.cs">
       <DependentUpon>202101150413371_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202101150811076_Initial1.cs" />
+    <Compile Include="Migrations\202101150811076_Initial1.designer.cs">
+      <DependentUpon>202101150811076_Initial1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Feedback.cs" />
@@ -357,6 +363,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202101150413371_Initial.resx">
       <DependentUpon>202101150413371_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202101150811076_Initial1.resx">
+      <DependentUpon>202101150811076_Initial1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

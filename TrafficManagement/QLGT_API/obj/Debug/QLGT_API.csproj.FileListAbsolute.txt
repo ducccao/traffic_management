@@ -374,3 +374,4 @@ C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\QLGT_API\
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\QLGT_API\obj\Debug\QLGT_API.pdb
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\QLGT_API\obj\Debug\QLGT_API.Migrations.Initial.resources
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\QLGT_API\obj\Debug\QLGT_API.csproj.GenerateResource.cache
+C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\QLGT_API\obj\Debug\QLGT_API.Migrations.Initial1.resources

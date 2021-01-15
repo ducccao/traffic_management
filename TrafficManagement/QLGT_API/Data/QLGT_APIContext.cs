@@ -30,5 +30,9 @@ namespace QLGT_API.Data
         public System.Data.Entity.DbSet<QLGT_API.Models.Feedback> Feedbacks { get; set; }
 
         public System.Data.Entity.DbSet<QLGT_API.Models.Test> Tests { get; set; }
+
+        public System.Data.Entity.DbSet<QLGT_API.Models.Payment> Payments { get; set; }
+
+        public System.Data.Entity.DbSet<QLGT_API.Models.TypeVehicle> TypeVehicles { get; set; }
     }
 }

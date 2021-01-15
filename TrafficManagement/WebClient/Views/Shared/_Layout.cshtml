@@ -10,6 +10,10 @@
           crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
             crossorigin="anonymous"></script>
+
+
+    @RenderSection("Styles", false);
+
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -63,6 +67,15 @@
                                 Tất cả các loại xe
                             </a>
 
+                            <div class="sb-sidenav-menu-heading">Đánh giá</div>
+                            <a class="nav-link" href="/Feedback/All">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                             Xem đánh giá của mọi người
+                            </a>
+                            <a class="nav-link" href="/Feedback/Add">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                             Gửi đánh giá
+                            </a>
                             @*<a class="nav-link" href="unaprovedfiles.html">
             <div class="sb-nav-link-icon"><i class="fas fa-file-edit"></i></div>
             Hồ sơ chưa duyệt
