@@ -10,3 +10,15 @@ C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\MobileCli
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.dll
 C:\Users\ASUS\Desktop\GitHub\2021\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.pdb
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\bin\Debug\netstandard2.0\MobileClient.deps.json
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\bin\Debug\netstandard2.0\MobileClient.dll
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\bin\Debug\netstandard2.0\MobileClient.pdb
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.csprojAssemblyReference.cache
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.AssemblyInfoInputs.cache
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.AssemblyInfo.cs
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.csproj.CoreCompileInputs.cache
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\XamlC.stamp
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.dll
+D:\traffic_management\TrafficManagement\MobileClient\MobileClient\obj\Debug\netstandard2.0\MobileClient.pdb

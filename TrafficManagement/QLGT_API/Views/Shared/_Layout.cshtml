@@ -2,40 +2,147 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*@Styles.Render("~/Content/css")*@
+    <link href="~/CSS/css.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+          crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+            crossorigin="anonymous"></script>
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <body class="sb-nav-fixed">
+
+        @Html.Partial("_PartialNav")
+
+
+
+
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Nộp phạt online</div>
+
+                            <a class="nav-link" href="#" id="Currentuser">
+                                <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                                Xem thông tin
+                            </a>
+                            <a class="nav-link" href="addaccount.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                                Nộp phạt
+                            </a>
+                            @*<a class="nav-link" href="deleteaccount.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-user-slash"></i></div>
+                                Xoá tài khoản
+                            </a>*@
+                            <div class="sb-sidenav-menu-heading">Lịch hẹn của bạn </div>
+                            <a class="nav-link" href="/Schedule">
+                                <div class="sb-nav-link-icon"><i class="fas fa-calendar-alt"></i></div>
+                                Xem lịch hẹn
+                            </a>
+                            <a class="nav-link" href="allschedule.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-calendar-alt"></i></div>
+                                Tạo lịch hẹn
+                            </a>
+                            <a class="nav-link" href="deleteschedule.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-calendar-times"></i></div>
+                                Xoá lịch hẹn
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Hồ sơ của bạn</div>
+                            <a class="nav-link" href="allfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                                Tra cứu hồ sơ
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Thông tin xe</div>
+                            <a class="nav-link" href="/Vehicle">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                                Tất cả các loại xe
+                            </a>
+
+                            @*<a class="nav-link" href="unaprovedfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-edit"></i></div>
+                                Hồ sơ chưa duyệt
+                            </a>
+                            <a class="nav-link" href="aprovedfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-check"></i></div>
+                                Hồ sơ đã duyệt
+                            </a>
+                            <a class="nav-link" href="rejectedfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-times"></i></div>
+                                Hồ sơ bị loại
+                            </a>*@
+                        </div>
+                    </div>
+                    <div class="info">
+                        <a id="Name" href="#" class="d-block"></a>
+                    </div>
+                </nav>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                    <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
-                </ul>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        @RenderBody()
+                    </div>
+                </main>
+
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-</body>
+        <div id="divData" class="well hidden">
+            <div id="Ten">Name: </div>
+            <div id="DienThoai">Phone number: </div>
+            <div id="DiaChi">Address: </div>
+            <div id="Username">Username: </div>
+
+        </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+        <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#Name').text(sessionStorage.getItem('username'));
+                $('#Currentuser').click(function () {
+                    $.ajax({
+                        // Post username, password & the grant type to /token
+                        url: 'api/CurrentUser',
+                        method: 'GET',
+                        headers: {
+                            'Authorization': 'Bearer ' + sessionStorage.getItem('accessToken')
+                        },
+
+                        success: function (data) {
+                            //$('#divErrorText').text($('#txtUsername').val());
+                            //$('#divError').show('fade');
+                            $('#divData').removeClass('hidden');
+                            $('#tblBody').empty();
+
+
+                            $('#Ten').text(JSON.stringify(data.Name));
+                            $('#DiaChi').text(JSON.stringify(data.Address));
+                            $('#DienThoai').text(JSON.stringify(data.Phone));
+                            $('#Username').text(JSON.stringify(data.UserName));
+                            $('#divError').show('fade');
+
+
+                        },
+
+                        // Display errors if any in the Bootstrap alert <div>
+                        error: function (jqXHR) {
+                            $('#divErrorText').text(jqXHR.responseText);
+                            $('#divError').show('fade');
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
 </html>
