@@ -12,16 +12,27 @@ using System.Web.Http.Description;
 using QLGT_API.Data;
 using QLGT_API.Models;
 using System.Web.Http.Cors;
+using System.Security.Claims;
 
 namespace QLGT_API.Controllers
 {
     //[EnableCors(origins: "https://localhost:44307", headers:"*", methods: "*")]
-   // [EnableCors(origins: "*", headers:"*", methods: "*")]
-
+    // [EnableCors(origins: "*", headers:"*", methods: "*")]
+    
     public class CustomersController : ApiController
     {
         private QLGT_APIContext db = new QLGT_APIContext();
 
+        [Authorize]
+        [HttpGet]
+        [Route("api/CurrentUser")]
+        public Customer Currentuser()
+        {
+            var identity = (ClaimsIdentity)User.Identity;
+            Customer user;
+            user = db.Customers.FirstOrDefault(k => k.Name.Equals(identity.Name));
+            return user;
+        }
         // GET: api/Customers
         public IQueryable<Customer> GetCustomers()
         {
