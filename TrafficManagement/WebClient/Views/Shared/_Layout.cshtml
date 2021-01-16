@@ -8,10 +8,9 @@
 
     <style>
 
-        ::-webkit-scrollbar{
-            display:none;
+        ::-webkit-scrollbar {
+            display: none;
         }
-
     </style>
 
     <link href="~/CSS/css.css" rel="stylesheet" />
@@ -40,7 +39,7 @@
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Nộp phạt online</div>
 
-                            <a class="nav-link" href="/Payment/Index">
+                            <a id="getProfile" class="nav-link" href="#">
                                 <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
                                 Xem thông tin
                             </a>
@@ -49,9 +48,9 @@
                                 Nộp phạt
                             </a>
                             @*<a class="nav-link" href="deleteaccount.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-user-slash"></i></div>
-                                Xoá tài khoản
-                            </a>*@
+                                    <div class="sb-nav-link-icon"><i class="fas fa-user-slash"></i></div>
+                                    Xoá tài khoản
+                                </a>*@
                             <div class="sb-sidenav-menu-heading">Lịch hẹn của bạn </div>
                             <a class="nav-link" href="/Schedule/Index">
                                 <div class="sb-nav-link-icon"><i class="fas fa-calendar-alt"></i></div>
@@ -86,17 +85,17 @@
                                 Gửi đánh giá
                             </a>
                             @*<a class="nav-link" href="unaprovedfiles.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-file-edit"></i></div>
-                                Hồ sơ chưa duyệt
-                            </a>
-                            <a class="nav-link" href="aprovedfiles.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-file-check"></i></div>
-                                Hồ sơ đã duyệt
-                            </a>
-                            <a class="nav-link" href="rejectedfiles.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-file-times"></i></div>
-                                Hồ sơ bị loại
-                            </a>*@
+                                    <div class="sb-nav-link-icon"><i class="fas fa-file-edit"></i></div>
+                                    Hồ sơ chưa duyệt
+                                </a>
+                                <a class="nav-link" href="aprovedfiles.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-file-check"></i></div>
+                                    Hồ sơ đã duyệt
+                                </a>
+                                <a class="nav-link" href="rejectedfiles.html">
+                                    <div class="sb-nav-link-icon"><i class="fas fa-file-times"></i></div>
+                                    Hồ sơ bị loại
+                                </a>*@
                         </div>
                     </div>
                 </nav>
@@ -120,13 +119,54 @@
         <script src="js/scripts.js"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-        <script src="assets/demo/datatables-demo.js"></script>
 
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#getProfile').click(function () {
+                    $.ajax({
+                        // Post username, password & the grant type to /token
+                        url: `https://localhost:44328/api/CurrentUser`,
+                        method: 'GET',
+                        headers: {
+                            'Authorization': 'Bearer ' + sessionStorage.getItem('accessToken')
+                        },
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+                        success: function (data) {
+                            //$('#divErrorText').text($('#txtUsername').val());
+                            //$('#divError').show('fade');
+                            $('#divData').removeClass('hidden');
+                            $('#tblBody').empty();
+
+
+                            $('#Name').text(JSON.stringify(data.Name));
+                            $('#Address').text(JSON.stringify(data.Address));
+                            $('#Phone').text(JSON.stringify(data.Phone));
+                            $('#Username').text(JSON.stringify(data.UserName));
+                            $('#divError').show('fade');
+
+
+                        },
+
+                        // Display errors if any in the Bootstrap alert <div>
+                        error: function (jqXHR) {
+                            $('#divErrorText').text(jqXHR.responseText);
+                            $('#divError').show('fade');
+                        }
+                    });
+                });
+                $('#logout').click(function () {
+                    sessionStorage.removeItem("accessToken");
+                    window.location.href = `https://localhost:44356/Login`;
+                });
+
+            });
+        </script>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+@RenderSection("scripts", required: false)
     </body>
 </html>

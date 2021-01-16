@@ -1,8 +1,254 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @*@Styles.Render("~/Content/css")*@
+
+    <style>
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+    <link href="~/CSS/css.css" rel="stylesheet" />
+    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+          crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"
+            crossorigin="anonymous"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/js/bootstrap-dialog.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link href="~/CSS/profile.css" rel="stylesheet" />
+
+</head>
+<body class="sb-nav-fixed">
+
+    @Html.Partial("_PartialNav")
 
 
-<h1>
-    home
-</h1>
+
+
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_nav">
+            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <div class="sb-sidenav-menu">
+                    <div class="nav">
+                        <div class="sb-sidenav-menu-heading">Nộp phạt online</div>
+
+                        <a id="getProfile" class="nav-link" href="/">
+                            <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                            Xem thông tin
+                        </a>
+                        <a class="nav-link" href="/Payment/Pay">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user-plus"></i></div>
+                            Nộp phạt
+                        </a>
+                        @*<a class="nav-link" href="deleteaccount.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-user-slash"></i></div>
+                                Xoá tài khoản
+                            </a>*@
+                        <div class="sb-sidenav-menu-heading">Lịch hẹn của bạn </div>
+                        <a class="nav-link" href="/Schedule/Index">
+                            <div class="sb-nav-link-icon"><i class="fas fa-calendar-alt"></i></div>
+                            Xem lịch hẹn
+                        </a>
+                        <a class="nav-link" href="/Schedule/Add">
+                            <div class="sb-nav-link-icon"><i class="fas fa-calendar-alt"></i></div>
+                            Tạo lịch hẹn
+                        </a>
+                        <a class="nav-link" href="/Schedule/Delete">
+                            <div class="sb-nav-link-icon"><i class="fas fa-calendar-times"></i></div>
+                            Xoá lịch hẹn
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Hồ sơ của bạn</div>
+                        <a class="nav-link" href="allfiles.html">
+                            <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                            Tra cứu hồ sơ
+                        </a>
+                        <div class="sb-sidenav-menu-heading">Thông tin xe</div>
+                        <a class="nav-link" href="/Vehicle">
+                            <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                            Tất cả các loại xe
+                        </a>
+
+                        <div class="sb-sidenav-menu-heading">Đánh giá</div>
+                        <a class="nav-link" href="/Feedback/All">
+                            <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                            Xem đánh giá của mọi người
+                        </a>
+                        <a class="nav-link" href="/Feedback/Add">
+                            <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                            Gửi đánh giá
+                        </a>
+                        @*<a class="nav-link" href="unaprovedfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-edit"></i></div>
+                                Hồ sơ chưa duyệt
+                            </a>
+                            <a class="nav-link" href="aprovedfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-check"></i></div>
+                                Hồ sơ đã duyệt
+                            </a>
+                            <a class="nav-link" href="rejectedfiles.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-file-times"></i></div>
+                                Hồ sơ bị loại
+                            </a>*@
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <h1 id="username"></h1>
+        <div id="divData" class="hidden">
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <div class="container emp-profile">
+                            <form method="post">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="profile-img">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt="" />
+                                            <div class="file btn btn-lg btn-primary">
+                                                Change Photo
+                                                <input type="file" name="file" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="profile-head">
+                                            <h5 id="name1">
+                                            </h5>
+
+                                            <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Timeline</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="tab-content profile-tab" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Username</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p id="Username"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Name</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p id="Name"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Address</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p id="Address"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label>Phone</label>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p id="Phone"></p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div id="divError" class="alert alert-danger collapse">
+                                                <a id="linkClose" href="#" class="close">&times;</a>
+                                                <div id="divErrorText"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="~/Scripts/jquery-3.4.1.slim.js"></script>
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#username').text(sessionStorage.getItem('username'));
+            $('#getProfile').click(function () {
+                $.ajax({
+
+                    // Post username, password & the grant type to /token
+                    url: `https://localhost:44328/api/CurrentUser`,
+                    method: 'GET',
+                    headers: {
+                        'Authorization': 'Bearer ' + sessionStorage.getItem('accessToken')
+                    },
+
+                    success: function (data) {
+                        $('#divData').removeClass('hidden');
+                        $('#divErrorText').text(sessionStorage.getItem('username'));
+                        //$('#divErrorText').text($('#txtUsername').val());
+                        //$('#divError').show('fade');
+                        //$('#divData').removeClass('hidden');
+                        //$('#tblBody').empty();
+
+                        $('#name1').text(JSON.stringify(data.Name));
+                        $('#Name').text(JSON.stringify(data.Name));
+                        $('#Address').text(JSON.stringify(data.Address));
+                        $('#Phone').text(JSON.stringify(data.Phone));
+                        $('#Username').text(JSON.stringify(data.UserName));
+                        $('#divError').show('fade');
+                    },
+
+                    // Display errors if any in the Bootstrap alert <div>
+                    error: function (jqXHR) {
+                        $('#divErrorText').text(jqXHR.responseText);
+                        $('#divError').show('fade');
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
